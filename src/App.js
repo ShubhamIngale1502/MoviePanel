@@ -6,7 +6,7 @@ import MovieDetails_Page from './components/MovieDetails_Page';
 import Serch_Page from './components/Serch_Page';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import Navbarbs from './components/Navbarbs';
+import Navbar from './components/Navbar';
 import Populer from './components/Populer';
 
 function App() {
@@ -14,10 +14,9 @@ function App() {
     
     <div>
         <BrowserRouter>
-           {/* <Navbar /> */}
-           <Navbarbs/>
+           <Navbar/>
           <Routes>
-              <Route path="/populer"  element={<Populer/>} />
+              <Route path="/" element={<Populer/>} />
               <Route path="/top-rated"  element={<TopRatedPage/>} />
               <Route path="/upcoming"  element={<UpComingPage/>} />
               <Route path="/movie/:movieId" element={<MovieDetails_Page />} />

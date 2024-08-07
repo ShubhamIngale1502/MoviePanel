@@ -1,3 +1,26 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-button {
+  margin: 0 5px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #555;
+  color: rgb(244, 242, 242);
+  cursor: pointer;
+}
+
+.pagination-button.active {
+  background-color: #080808;
+}
+
+.pagination-button:hover {
+  background-color: #0c0c0c;
+}
+
 .movie-list {
     display: flex;
     flex-wrap: wrap;

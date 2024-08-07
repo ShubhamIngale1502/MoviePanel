@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-function Navbarbs() {
+function Navbar() {
     const [query, setQuery] = useState('');
     const navigate = useNavigate();
 
@@ -17,7 +17,7 @@ function Navbarbs() {
     <div className='w-100'>
         <nav className="navbar navbar-expand-lg navbar-light bg-secondary p-2 text-dark fw-bold ">
   <div className="container-fluid text-right">
-    <NavLink className="navbar-brand fs-5" to="/populer">Movie_Page</NavLink>
+    <NavLink className="navbar-brand fs-5" to="">Movie_Page</NavLink>
     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div className="navbar-nav ms-auto fs-6">
         <NavLink className="nav-link active " aria-current="" to="/populer">Populer</NavLink>
@@ -41,4 +41,4 @@ function Navbarbs() {
   )
 }
 
-export default Navbarbs
+export default Navbar
