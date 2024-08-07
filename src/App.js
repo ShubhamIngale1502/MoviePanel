@@ -17,6 +17,7 @@ function App() {
            <Navbar/>
           <Routes>
               <Route path="/" element={<Populer/>} />
+              <Route path="/populer"  element={<Populer/>} />
               <Route path="/top-rated"  element={<TopRatedPage/>} />
               <Route path="/upcoming"  element={<UpComingPage/>} />
               <Route path="/movie/:movieId" element={<MovieDetails_Page />} />
